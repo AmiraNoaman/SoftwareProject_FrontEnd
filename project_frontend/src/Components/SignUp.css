@@ -1,0 +1,258 @@
+.SignUp_hr { 
+  display: block;
+  border-top: 0.5px #d9dadc;
+  width:100%
+} 
+
+.SignUp_h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 40px;
+  color: black;
+}
+
+.SignUp_h3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold; 
+  font-size: 17px;
+  color: black;
+}
+
+.Login-logo {
+  width:50px;
+  height:50px;
+  pointer-events: none;
+  text-align: center;
+  vertical-align: -0.3cm;
+}
+
+/* .SignUp_facebook-logo {
+    width:20px;
+    height:20px;
+    pointer-events: none;
+    text-align: center;
+    vertical-align: -0.1cm;
+}  */
+
+.SignUp_container {
+  max-width: 22%; 
+  /* min-width: 25%;  */
+  margin: auto;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  /* width: 50%; */
+  flex-wrap: wrap;
+}
+
+.SignUp_button:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+
+.SignUp_button_facebook{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: block;
+  width: 20vw;
+  padding: 2vh;
+  font-size:14px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  white-space: wrap;
+  margin-left: 3rem;
+  border-radius: 500px;
+  color: #fff;
+  background-color: #3B5998;
+}
+
+.SignUp_h6 { 
+  text-align:center; 
+  border-bottom: 1px solid rgb(180, 169, 169); 
+  line-height:0.1vh; 
+  width: 25vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+} 
+  
+.SignUp_h6_span { 
+  background:#fff; 
+  padding:0vh 0.5vw; 
+}
+
+input[type=text], select {
+  font-family: Arial, Helvetica, sans-serif;
+  /* padding: 2vh 5vw; */
+  text-align: left;
+  height: 3rem;
+  width: 27rem;
+  display:block;
+  font-size: 12px;
+  color: solid #d9dadc;
+  border: 1px solid #d9dadc;
+  box-sizing: border-box;
+  white-space: wrap;
+}
+
+input[type=password], select {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 3rem;
+  width: 27rem;
+  text-align: left;
+  color: solid #d9dadc;
+  border: 1px solid #d9dadc;
+  box-sizing: border-box;
+  font-size: 12px;
+  white-space: wrap;
+}
+
+input[type=date],select{
+  font-family: Arial, Helvetica, sans-serif;
+  height: 3rem;
+  width: 27rem;
+  text-align: left;
+  color: solid #88898c;;
+  display: block;
+  border: 1px solid #d9dadc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 12px;
+  white-space: wrap;
+
+}
+
+input[type=checkbox]:checked:before {
+  content: "";
+  display: block;
+  border: solid #1db954;
+  white-space: wrap;
+}
+
+input[type=checkbox]:checked:after {
+  content: "";
+  display: block;
+  white-space: wrap;
+  border: solid #1db954;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #1db954;
+}
+
+input[type=radio]{
+  color: #1db954;
+}
+
+.SignUp_button_Signup {  
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: 2vh 8vw;
+  font-size:15px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: auto;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #1db954;
+  border: none;
+  border-radius: 500px;
+}
+
+.SignUp_a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:11px;
+    color: #1db954;
+}
+
+.SignUp_a:link {
+    text-decoration: none;
+}
+  
+.SignUp_a:visited {
+    text-decoration: none;
+}
+
+.SignUp_h4{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  /* margin-top: 12px;
+  margin-bottom: 12px; */
+}
+
+.SignUp_p_gray{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight: normal;
+  color:  #88898c;
+  white-space: wrap;
+}
+
+.SignUp_p_gray_label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:11px;
+  font-weight: 500;
+  color:   #a3a5a8;
+  white-space: wrap;
+  margin-left: -2.5rem;
+}
+
+.SignUp_p_black{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:12px;
+  font-weight: normal;
+  color: black;
+  white-space: wrap;
+}
+
+.SignUp_birth_label{
+  /* margin-left: 9cm;
+  margin-right: 2cm; */
+  font-family: Arial, Helvetica, sans-serif;
+  color: solid #88898c;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: wrap;
+  /* font-size: 12px; */
+}
+
+.SignUp_radiolabel{
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 5cm solid #d9dadc;
+  color: solid #88898c;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: wrap;
+  margin-right: 3rem;
+  margin-left: -1rem;
+
+}
+
+/* .SignUp_radio_button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(165, 60, 60);
+    border-radius: 50%;
+  } */
+
+/* .SignUp_check_label{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #88898c;
+  font-size: 102px;
+  text-shadow:solid #d9dadcc0;
+  margin-left: -1.5rem;
+    
+} */

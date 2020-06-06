@@ -1,0 +1,35 @@
+.web-h1{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+}
+.web-home{
+    display: table;
+    background-color:rgb(29, 28, 28);
+   
+}
+.web-h4 {
+    display: block;
+    color: gray;
+}
+.web-a:link {
+    text-decoration: none;
+}
+  
+.web-a:visited {
+text-decoration: none;
+}
+
+.web-a:hover {
+text-decoration: underline;
+}
+
+.web-seeAll{
+    display: block;
+    color: gray;
+    font-size: 18px;
+    text-align: right;
+}
+.web-seeAll:hover {
+    text-decoration: underline;
+    }

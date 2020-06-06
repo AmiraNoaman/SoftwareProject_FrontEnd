@@ -1,0 +1,20 @@
+
+
+
+.load1{
+
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(236, 237, 238));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loader1 {
+    border: 16px -webkit-linear-gradient(rgb(245, 245, 245), rgb(233, 233, 233));
+    border-radius: 50%;
+    border-top: 16px solid rgb(242, 241, 243);
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+     animation: spin 2s linear infinite;
+  } 

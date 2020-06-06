@@ -1,0 +1,41 @@
+.song {
+    
+    display: flex;
+    padding: 10px 10px 10px 20px;
+    -webkit-box-pack: justify;
+    
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+}
+.div-block-5{
+
+    display: flex;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.song-name-and-artist {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 10px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #a3a1a1;
+}
+.song:hover {
+    background-color: hsla(0, 0%, 100%, 0.13);
+}
+.song:hover .image-2 { 
+    display : block; 
+}
+.song:hover .image-9{
+
+    display: none;
+}

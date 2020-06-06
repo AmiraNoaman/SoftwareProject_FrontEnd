@@ -1,0 +1,93 @@
+#Section { 
+     background-color: rgb(32, 31, 31);
+     height: 15rem;
+     width: 12rem;
+     display: inline-block;
+     position: relative;
+     box-sizing: border-box;
+}
+.box{
+     height: 3.5rem;
+     width: 3.5rem;
+     position: absolute ;
+     top:11rem;
+     left:8rem;
+     z-index: 2;
+     display: block;
+     box-sizing: border-box;
+     background-color: rgba(0, 0, 0, 0);
+
+     opacity:0;
+ pointer-events:none;
+ -webkit-box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12),0 1px 5px 0 rgba(0,0,0,.2);
+ box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.12),0 1px 5px 0 rgba(0,0,0,.2);
+ border-radius:500px
+
+}
+
+html[dir=ltr] .box {
+     right:16px
+    }
+    html[dir=rtl] .box {
+     left:16px
+    }
+
+    #Section:hover .box {
+     position:unset;
+     opacity:1;
+     pointer-events:auto;
+     position:absolute
+    }
+    #Section:focus-within .box {
+     position:unset;
+     opacity:1;
+     pointer-events:auto;
+     position:absolute
+    }
+#two{
+     box-sizing: border-box;
+     position: static;
+     z-index: auto;
+     display: inline;
+}
+.Button{
+     height: 3.5rem;
+     width: 3.5rem;
+     position: relative ;
+     width: 100%;
+     box-sizing: border-box; 
+     z-index: 1;
+     line-height:18px;
+     --size:45px;
+     border:0;
+     border-radius:500px;
+     color:#fff;
+     background-color:#1db954;
+     -webkit-transition:-webkit-transform 33ms cubic-bezier(.3,0,0,1);
+     transition:-webkit-transform 33ms cubic-bezier(.3,0,0,1);
+     transition:transform 33ms cubic-bezier(.3,0,0,1);
+     transition:transform 33ms cubic-bezier(.3,0,0,1),-webkit-transform 33ms cubic-bezier(.3,0,0,1);
+     display:-webkit-box;
+     display:-ms-flexbox;
+     display:flex;
+     -webkit-box-pack:center;
+     -ms-flex-pack:center;
+     justify-content:center;
+     -webkit-box-align:center;
+     -ms-flex-align:center;
+     align-items:center;
+     height:var(--size);
+     width:var(--size)
+}
+.no-focus-outline .Button:focus {
+     outline:none
+    }
+    .Button:focus,
+    .Button:hover {
+     -webkit-transform:scale(1.06);
+     transform:scale(1.06)
+    }
+    .Button:active {
+     -webkit-transform:scale(1);
+     transform:scale(1)
+    }

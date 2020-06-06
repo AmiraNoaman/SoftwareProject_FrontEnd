@@ -1,0 +1,214 @@
+.modal-content{
+
+
+    
+    margin-top: 33%;
+    border: none;
+    padding-right: 10%;
+    align-items: center;
+    
+
+}
+#text-box{
+
+    float: left;
+    align-content: flex-start;
+}
+.modal.show .modal-dialog {
+    transform: none;
+    
+}
+.modal-ku {
+    width: 750px;
+    margin: auto;
+  }
+.new-playlist {
+    display: flex;
+   position: fixed;
+    z-index: 2000;
+    
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    background-color: rgba(0, 0, 0, 0.86);
+}
+.Close{
+    align-items: center;
+    text-align: center;
+}
+.custom-modal{
+    width: 198%;
+    height: 100VH;
+   }
+.heading-48 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #fff;
+    font-size: 48px;
+    text-align: center;
+}
+#popup {
+    position: absolute;
+    top: 8.5%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 100%;
+    background-color: transparent;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.1s;
+    color: white;
+    height: 100%;
+}
+
+#popup.active {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.01s;
+}
+.modal-full {
+    min-width: 20%;
+    margin-left: 80;
+}
+
+.modal-full .modal-content {
+    min-height: 100vh;
+}
+@media (max-width: 1200px){
+._7c0399398b8b07b1b1fa6764a3ed59b1-scss {
+    padding: 0;
+}
+._7c0399398b8b07b1b1fa6764a3ed59b1-scss {
+    width: 100%;
+    padding: 0 20%;
+    background-color: #282828;
+}}
+.inputBox {
+    position: relative;
+    background-color: #282828;
+    padding: 32px 0;
+}
+.contentSpacing {
+    padding: 0 32px;
+    margin: 0;
+    max-width: 1955px;
+}
+.inputBox-label {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .015em;
+    font-weight: var(--glue-font-weight-bold);
+    color: #fff;
+    text-transform: none;
+    margin-bottom: .5em;
+}
+#input-holder {
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -.005em;
+    font-weight: var(--glue-font-weight-black);
+    color: #fff;
+    text-transform: none;
+    caret-color: #1db954;
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    margin-left: 0;
+}
+
+.close-icon{
+    background-color: transparent;
+    color: #fff;
+}
+
+    
+
+.cancel-button {
+    padding: 0 10px;
+}
+.button-container {
+     
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 28px 0;
+    z-index: 2;
+   position: relative;
+}
+.Cancel {
+    
+    background-color: transparent;
+    z-index: 10;
+    
+}
+.Cancel:hover{
+transform: scale(1.2) perspective(1px)
+}
+
+.Cancel {
+    
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 500px;
+    color:white;
+    -webkit-transition: all 33ms cubic-bezier(.3,0,0,1);
+    transition: all 33ms cubic-bezier(.3,0,0,1);
+    will-change: transform;
+    white-space: nowrap;
+    padding: 8px 34px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #fff;
+   
+    
+}
+.create:hover {
+    transform: scale(1.2) perspective(0.5px)
+}
+.create {
+    background-color: #1db954;
+}
+.create {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: 1.76px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 500px;
+    color:white;
+    -webkit-transition: all 33ms cubic-bezier(.3,0,0,1);
+    transition: all 33ms cubic-bezier(.3,0,0,1);
+    will-change: transform;
+    white-space: nowrap;
+    padding: 8px 34px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+._7c0399398b8b07b1b1fa6764a3ed59b1-scss {
+    width: 100vw;
+    position: relative;
+    margin-left: -35vw;
+
+    background-color: #282828;
+}

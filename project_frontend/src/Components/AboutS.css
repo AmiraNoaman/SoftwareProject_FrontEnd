@@ -1,0 +1,86 @@
+
+@font-face {
+    font-family: 'Andika Basic Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Andika Basic Regular'), url('../Containers/AndBasR.woff') format('woff');
+    }
+@media screen and (max-width: 360px) {
+
+
+    #About{
+
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap:initial; */
+      justify-content: top;
+      align-content: center; 
+      align-items: center;
+      background-color: black;
+      
+      }
+    #icon{
+      background-color: black;
+      order:1;
+    }
+    #company{
+      background-color: black;
+
+      order:2;
+    }
+    #communities{
+      background-color: black;
+
+      order: 3;
+    }
+    #usefulLinkes{
+      background-color: black;
+
+      order:4;
+    }
+    #icons{
+      background-color: black;
+
+      order: 5;
+    }
+
+  }
+#About {
+   
+    height: 15rem;
+    background-color: black;
+  }
+
+.img1{
+    height: 3rem;
+    width: 8rem;
+  }
+
+#c{
+    font-family: 'Andika Basic Regular';
+    color:#dcd4e4a9;
+  
+  }
+#C{
+    font-family: 'Andika Basic Regular';
+    color:white;
+  }
+.imgi{
+    height: 3rem;
+    width: 3rem; 
+    padding: .5rem; 
+  }
+.imgf{
+    height: 3rem;
+    width: 3rem; 
+    padding: .5rem;
+  }
+.imgt{
+    height: 3rem;
+    width: 3rem; 
+    padding: .5rem;
+  }
+.imgi,.imgf,.imgt
+{
+  display:inline;
+}

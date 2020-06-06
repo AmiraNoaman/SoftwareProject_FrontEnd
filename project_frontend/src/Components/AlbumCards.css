@@ -1,0 +1,36 @@
+
+   #AlbumCards:hover .boxplaylist {
+    position:unset;
+    opacity:1;
+    pointer-events:auto;
+    position:absolute
+   }
+   #AlbumCards:focus-within .boxplaylist {
+    position:unset;
+    opacity:1;
+    pointer-events:auto;
+    position:absolute
+   }
+
+
+   html[dir=ltr] .boxplaylist {
+      right:16px
+     }
+     html[dir=rtl] .boxplaylist {
+      left:16px
+     }
+
+     
+   .no-focus-outline .Buttonplaylist:focus {
+      outline:none
+     }
+     .Buttonplaylist:focus,
+     .Buttonplaylist:hover {
+      -webkit-transform:scale(1.06);
+      transform:scale(1.06)
+     }
+     .Buttonplaylist:active {
+      -webkit-transform:scale(1);
+      transform:scale(1)
+     }
+  

@@ -1,0 +1,56 @@
+
+.grid {
+    grid-template-areas: "Area Area-2";
+    -ms-grid-columns: 0.5fr 1fr;
+    grid-template-columns: 0.5fr 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+}
+.w-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+}
+
+
+.content1{
+
+    /* width: 100% ;
+    height: 100%; */
+    background: linear-gradient(to bottom, #684106, #000000 40%)
+   
+}
+
+
+.div-block-6 {
+    overflow: visible;
+    
+}
+
+
+
+.load4{
+
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(242, 244, 245));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.loader4 {
+    border: 16px -webkit-linear-gradient(rgb(220, 218, 221), rgb(238, 238, 238));
+    border-radius: 50%;
+    border-top: 16px solid rgb(242, 241, 243);
+    width: 100px;
+    height: 100px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+     animation: spin 2s linear infinite;
+  } 
+
+

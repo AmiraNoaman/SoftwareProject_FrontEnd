@@ -1,0 +1,83 @@
+ 
+@font-face {
+    font-family: 'Myriad Web Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: local('MyriadWebPro-Bold'), url('../Containers/myriadwebpro-bold.woff') format('woff');
+    }
+     
+
+@media screen and (max-width: 375px) {
+
+
+    #section1{
+
+      display: flex;
+      flex-direction: column;
+      flex-wrap: initial;
+      justify-content:center ;
+      align-content: center; 
+      align-items: center;
+
+      
+     }
+
+    .lap{
+
+       width: 13rem;
+
+       position: relative;
+       left:5rem;
+       top:5rem; 
+
+  
+        order:1;
+     }
+    #header1{
+      position: relative;
+      font-size: 1.5rem;
+      text-align: center;
+      order:2;
+    }
+    #paraheader2{
+      /* text-align: center; */
+      order:3;
+    }
+
+  }
+
+
+  
+  #section1 {
+  
+    background: linear-gradient(to left, rgb(5, 72, 75)40%, rgb(11, 94, 68)100%);
+    /* padding: 133px; */
+    height: 42rem;
+    /* background: url(https://image.freepik.com/free-vector/abstract-colorful-flow-shapes-background_23-2148240131.jpg) left bottom/800px  no-repeat rgb(239, 183, 2); */
+
+ 
+  }
+  
+  h1 {
+  
+    font-family:'Myriad Web Pro';
+  }
+  
+
+/*   
+  #header1{
+  
+  }
+  
+  /* #paraheader2 {
+   margin-top: 90px;
+   float: left;
+   margin-left: 120px;   
+  } */ 
+  
+.lap {
+position: relative;
+top:7rem;
+
+
+}

@@ -1,0 +1,34 @@
+#search{
+    background-color:black;
+    height: auto;
+    display: table;
+    height: 55rem; 
+    width: 100%;
+}
+#Top{
+    display: grid;
+    position: static;
+    height: 20rem;
+    width: 30rem;
+    grid-template-columns: 14rem 14rem ;
+    grid-template-rows: 6rem  12rem;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    display: flex;
+  }
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 2;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* grid-row-end: 3; */
+    background-color: rgb(39, 37, 37);
+}
+.cardSong{
+    display: flex;
+}
