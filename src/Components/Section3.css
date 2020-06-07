@@ -1,0 +1,80 @@
+
+@media screen and (max-width: 500px) {
+
+  #h2section3{
+
+    position: relative;
+    bottom: 2rem;
+  }
+
+  .para3,.para32 {
+
+    position: relative;
+    bottom: 1rem;
+
+  }
+
+}
+
+#section3 {
+    background: linear-gradient(to right, rgb(5, 121, 82)50%, rgb(0, 0, 0)100%);
+    height:420px;
+    /* width:auto; */
+  }
+  
+  .header4{
+  
+    position: relative;
+    top: 70px;
+  }
+ 
+  
+  #alldevices{
+  
+    width: 35rem;
+   
+  }
+
+  .list {
+    position: relative;
+    top:70px;
+    height: 32px;
+    color: white;
+
+  }
+
+
+  /* .list2 {
+  
+
+    margin-top: 106px;
+    margin-left: 300px;
+    color: black;
+    font-weight: 500;
+
+  } */
+
+  .para3{
+    padding-left: 10px;
+    color: whitesmoke;
+    font-size: 17px;
+  }
+  
+  .para32{
+    padding-left: 10px;
+    color: black;
+    font-size: 17px;
+  }
+  .para3:hover {
+    text-decoration: underline;
+    color: white;
+  }
+  .para32:hover {
+
+   text-decoration: underline;
+   color: cadetblue;
+  }
+ 
+  
+  
+   
