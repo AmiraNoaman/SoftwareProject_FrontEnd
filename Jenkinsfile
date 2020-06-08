@@ -1,6 +1,6 @@
 pipeline {
 environment {
-registry = "amiranoaman1/firstRepo1"
+registry = "amiranoaman1/firstrepo1"
 registryCredential = 'dockerhub_id'
 dockerImage = ''
 }
