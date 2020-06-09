@@ -37,12 +37,17 @@ sh "docker rmi $registry:$BUILD_NUMBER"
 }
 
 post {
-    failure {
-        mail to: 'amira.noaman21@gmail.com',
-             subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-             body: "Something is wrong with ${env.BUILD_URL}"
+        always {
+            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
+        }
     }
-}    
+// post {
+//     failure {
+//         mail to: 'amira.noaman21@gmail.com',
+//              subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+//              body: "Something is wrong with ${env.BUILD_URL}"
+//     }
+// }    
 // post {
     //     failure {
     //         emailext body: 'Check console output at $BUILD_URL to view the results. \n\n ${CHANGES} \n\n -------------------------------------------------- \n${BUILD_LOG, maxLines=100, escapeHtml=false}', 
