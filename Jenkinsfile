@@ -31,25 +31,12 @@ pipeline {
                 steps{
                     sh "docker rmi $registry:$BUILD_NUMBER"}
                 }
-            
-            stage('Email Notification')
-            {
-                steps{
-                   mail bcc: '', body: '''Hi welcome to jenkins email alerts
-                    Thanks
-                    Amira''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'amira.noaman21@gmail.com'
- 
-                }
-            }
+        
         }
 
 post {
         always {
-            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'
-            mail bcc: '', body: '''Hi welcome to jenkins email alerts
-            Thanks
-            Amira''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'amira.noaman21@gmail.com'
-            
+            emailext body: 'A Test EMail', recipientProviders: [[$class: 'DevelopersRecipientProvider'], [$class: 'RequesterRecipientProvider']], subject: 'Test'            
         }
     }
 // post {

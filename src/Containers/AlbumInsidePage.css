@@ -1,6 +1,6 @@
 
 .grid {
-    grid-template-areas: "Area Area-2"
+    grid-template-areas: "Area Area-2";
     -ms-grid-columns: 0.5fr 1fr;
     grid-template-columns: 0.5fr 1fr;
     -ms-grid-rows: auto;
