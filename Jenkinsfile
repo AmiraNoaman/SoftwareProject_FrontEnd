@@ -1,40 +1,44 @@
 pipeline {
-environment {
-registry = "amiranoaman1/firstrepo1"
-registryCredential = 'dockerhub_id'
-dockerImage = ''
-        EMAIL_TO = 'amira.noaman21@gmail.com'
-
-}
-agent any
-stages {
-stage('Cloning our Git') {
-steps {
-git 'https://github.com/AmiraNoaman/SoftwareProject_FrontEnd.git'
-}
-}
-stage('Building our image') {
-steps{
-script {
-dockerImage = docker.build registry + ":$BUILD_NUMBER"
-}
-}
-}
-stage('Deploy our image') {
-steps{
-script {
-docker.withRegistry( '', registryCredential ) {
-dockerImage.push()
-}
-}
-}
-}
-stage('Cleaning up') {
-steps{
-sh "docker rmi $registry:$BUILD_NUMBER"
-}
-}
-}
+    environment {
+        registry = "amiranoaman1/firstrepo1"
+        registryCredential = 'dockerhub_id'
+        dockerImage = ''
+        EMAIL_TO = 'amira.noaman21@gmail.com'}
+        agent any
+        
+        stages {
+            stage('Cloning our Git') {
+                steps {
+                    git 'https://github.com/AmiraNoaman/SoftwareProject_FrontEnd.git'
+                    }
+                }
+            stage('Building our image') {
+                steps{
+                    script {
+                        dockerImage = docker.build registry + ":$BUILD_NUMBER"}
+                    }
+                    }
+            stage('Deploy our image') {
+                steps{
+                    script {
+                        docker.withRegistry( '', registryCredential ) {
+                            dockerImage.push()
+                            }
+                        }
+                    }
+                }
+            stage('Cleaning up') {
+                steps{
+                    sh "docker rmi $registry:$BUILD_NUMBER"}
+                }
+            
+            stage('Email Notification')
+            {
+                mail bcc: '', body: '''Hi welcome to jenkins email alerts
+                Thanks
+                Amira''', cc: '', from: '', replyTo: '', subject: 'Jenkins Job', to: 'amira.noaman21@gmail.com'
+            }
+        }
 
 post {
         always {
